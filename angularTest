@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title> Title </title> 
+		
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	</head>
+
+	<body>
+
+	<div ng-app="" ng-init="firstName='John'">
+	Name <input type ="text"> </input>
+
+	</div>
+<!--
+		 <script type="text/javascript" >
+		 	function StoreController()
+		 	{
+		 		alert("woop woop!");
+		 	}
+		 </script>
+		 -->
+
+	</body>
+</html>

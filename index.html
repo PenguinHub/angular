@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="store">
+	<head>
+		<title>Title</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+	</head>
+	<body ng-controller="StoreController as store">
+	<!--hide product if its sold out 
+		<div ng-hide="store.product.soldOut"> -->
+
+		<!-- loop through all items in products( for each loop)-->
+		<div ng-repeat ="product in store.products">
+			<h1>{{product.name}}</h1>
+			<h2> {{product.price}}</h2>
+			<p> {{product.description}} </p>
+			<!-- only show button  if cna purchase is true-->
+			<button ng-show="product.canPurchaase"> Add to Cart </button>
+		</div>
+
+
+
+	<p>{{"Hello"+ " You"}} </p>
+	<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
+
